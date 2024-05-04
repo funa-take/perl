@@ -1,0 +1,12 @@
+version: '3'
+services:
+  perl:
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    volumes:
+      - ./:/work
+      - vscode-server:/root/.vscode-server
+    command: sleep infinity
+volumes:
+  vscode-server:

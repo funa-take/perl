@@ -1,0 +1,16 @@
+{
+  "name": "perl debug",
+  "shutdownAction": "none",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "perl",
+  "workspaceFolder": "/work",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "richterger.perl"
+      ]
+    }
+  }
+}
